@@ -1,0 +1,82 @@
+name: Bug Report
+description: Reporte um comportamento incorreto no bundle do Files Manager.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar. Preencha todos os campos para que o problema possa ser analisado.
+        - Verifique se já existe uma issue aberta para o mesmo problema antes de continuar.
+        - Para vulnerabilidades de segurança, **não use este formulário** — leia [SECURITY.md](../SECURITY.md).
+
+  - type: input
+    id: version
+    attributes:
+      label: Versão do bundle
+      description: Informe a versão do arquivo `files-manager.bundle.min.js` (ex. v3.0.3).
+      placeholder: "ex: v3.0.3"
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Navegador e versão
+      description: Navegador onde o problema ocorre.
+      placeholder: "ex: Chrome 122, Firefox 124, Safari 17"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Sistema operacional
+      placeholder: "ex: Windows 11, macOS 14, Ubuntu 22.04"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do problema
+      description: Descreva o que está acontecendo de errado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      description: Liste os passos mínimos para reproduzir o problema.
+      placeholder: |
+        1. Inicializar o Files Manager com as opções X e Y.
+        2. Clicar em ...
+        3. Observar o erro.
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Erros no console (se houver)
+      description: Cole aqui mensagens de erro exibidas no console do navegador.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: license
+    attributes:
+      label: Licença
+      options:
+        - label: Possuo uma licença válida do Files Manager.
+          required: true

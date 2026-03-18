@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Adquirir licença / Suporte comercial
+    url: mailto:contato@jepasa.com
+    about: Para adquirir uma licença válida ou obter suporte técnico, entre em contato por e-mail.
+  - name: Política de Segurança
+    url: https://github.com/jepasa/files-manager/blob/main/.github/SECURITY.md
+    about: Para reportar vulnerabilidades de segurança de forma responsável, leia a política antes de agir.
